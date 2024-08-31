@@ -1,3 +1,4 @@
+/* Resetting padding and margin for all elements */
 *{
     padding: 0;
     margin: 0;
@@ -12,6 +13,7 @@ body{
     height: 98vh;
 }
 
+/* Styling the navigation bar */
 nav{
     display: flex;
     height: 6%;
@@ -23,17 +25,17 @@ nav{
     display: flex;
 }
 
-
+/* Styling the display picture */
 .dpimg{
     cursor: pointer;
     border-radius: 100%;
     width: 5%;
-    height: 5%;
     height: auto;
     margin: auto 0px;
     margin-left: 10px;
 }
 
+/* Styling personal information in the navigation bar */
 .navbar .personalInfo{
     line-height: 100%;
     display: flex;
@@ -52,25 +54,24 @@ nav{
     font-size: small;
 }
 
-
+/* Styling the scrollable chat area */
 .scrollable{
     overflow-y: scroll;
     color: #fff;
     display: flex;
-    height: 88%;
+    height: calc(88% - 60px); /* Adjusting height to account for footer */
     flex-direction: column;
-    background-image: url('images/bg.webp');
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
     align-items: flex-end;
     position: relative;
     -ms-overflow-style: none; 
     scrollbar-width: none; 
-    position: relative;
 }
 
 .scrollable .chatting{
     overflow-y: scroll;
     -ms-overflow-style: none; 
-    scrollbar-width:none; 
+    scrollbar-width: none; 
     position: relative;
     height: 100%;
     width: 100%;
@@ -78,7 +79,7 @@ nav{
 
 .scrollable .chatting::-webkit-scrollbar {
     display: none;
-  }
+}
 
 #listUL{
     overflow-y: hidden;
@@ -103,6 +104,7 @@ nav{
     max-width: 45%;
 }
 
+/* Styling for sent messages */
 .green{
     margin: 5px;
     text-align: start;
@@ -119,15 +121,15 @@ nav{
     font-size: x-small;
 }
 
+/* Styling for received messages */
 .recieved{
     float: left;
     width: 45%;
     max-width: 45%;
     background-color: red;
-
 }
 
-
+/* More styling for received messages */
 .grey{
     max-width: 45%;
     margin: 5px;
@@ -138,6 +140,7 @@ nav{
     border-radius: 0px 15px 15px;
 }
 
+/* Styling map view inside messages */
 .grey .mapview{
     margin: auto;
     display: flex;
@@ -156,53 +159,23 @@ nav{
 }
 
 .dateLabel{
-    color: #94bab3;
+    color: #61a79a;
     display: block;
     text-align: end;
     font-size: x-small;
 }
 
-
-/* help menu bold words color  */
-
-.sk .bold{
-    color: rgba(219, 154, 33, 0.822);
-}
-
-
-/* resume thumbnail in received class*/
-.resumeThumbnail{
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.downloadSpace{
-    background-color: #1d282f;
-    display: flex;
-    width: 100%;
-}
-.downloadSpace .pdfname{
-    display: flex;
-    width: 100%;
-}
-.pdfname label{
-    margin: auto 0px;
-}
-.downloadSpace img{
-    width: 30px;
-    cursor: pointer;
-    margin: 5px;
-}
-
-/* this css is used for embedded html in messages */
+/* Styling for bold text in messages */
 .bold{
     font-weight: bold;
 }
 
+/* Styling links in messages */
 .alink{
     color: goldenrod;
     transition: all 600ms ease;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .alink:hover{
@@ -210,8 +183,7 @@ nav{
     color: green;
 }
 
-/* this css is used for social links message */
-
+/* Styling social links message */
 .social{
     padding: 10px;
 }
@@ -235,6 +207,7 @@ nav{
 .social .socialItem:hover{
     background-color: rgba(58, 170, 58, 0.863);
 }
+
 #call{
     flex-direction: column;
     text-align: center;
@@ -244,9 +217,7 @@ nav{
     display: none;
 }
 
-
-
-
+/* Styling for full screen DP view */
 .scrollable .fullScreenDP{
     transition: all 700ms ease-in-out;
     position: absolute;;
@@ -272,7 +243,6 @@ nav{
     margin-left: 6%;
     margin-top: 5px;
     cursor: pointer;
-    
 }
 
 .btnColor{
@@ -284,20 +254,14 @@ nav{
     fill: red;
 }
 
-
-
+/* Styling for full screen DP view content */
 .scrollable .fullScreenDP .insideDP .dp{
     width: 90%;
     margin: auto;
     border-radius: 10px;
 }
 
-
-
-
-
-
-
+/* Footer styling */
 footer{
     position: relative;
     left: 0;
@@ -308,6 +272,7 @@ footer{
     height: auto;
     background-color: #202c33;
     text-align: center;
+    cursor: pointer;
 }
 
 .sendBar{
@@ -316,11 +281,11 @@ footer{
     width: 100%;
     margin: auto;
 }
+
 .sendBar svg{
     margin: auto;
     height: 40%;
     min-height: 40%;
-
 }
 
 .sendBar input[type='text']{
@@ -339,21 +304,18 @@ footer{
     border-color: transparent;
 }
 
-
 ::placeholder { 
     color: #8696a0;
     opacity: 1; 
-  }
+}
   
-  :-ms-input-placeholder { 
+:-ms-input-placeholder { 
     color: #8696a0;
-  }
+}
   
-  ::-ms-input-placeholder { 
+::-ms-input-placeholder { 
     color: #8696a0;
-  }
-
-
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -373,8 +335,6 @@ footer{
         overflow: hidden;
     }
 
-    
-
     .scrollable .fullScreenDP{
         display: none;
         width: 100%;
@@ -382,12 +342,10 @@ footer{
         overflow-y: scroll;
     }
 
-
     .scrollable .fullScreenDP .insideDP{
         display: flex;
         width: 70%;
     }
-
 
     .scrollable .fullScreenDP .dp{
         width: 50%;

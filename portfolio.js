@@ -1,8 +1,9 @@
 
 var audio = new Audio('assets/sentmessage.mp3');
-var contactString = "<div class='social'> <a target='_blank' href='tel:+923015280623'> <div class='socialItem' id='call'><img class='socialItemI' src='download-compresskaru.com (3).png'/><label class='number'>03015280623</label></div> </a> <a href='G-mail:qazishadab2233@gmail.com'> <div class='socialItem'><img class='socialItemI' src='emailicon(1).jpg' alt=''></div> </a> <a target='_blank' href='Github'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/918600765857'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''></div> </a> <a target='_blank' href='https://t.me/vinayak_09'> <div class='socialItem'><img class='socialItemI' src='images/telegram.svg' alt=''></div> </a> <a target='_blank' href='https://www.instagram.com/qazi.shadab_1?igsh=MXBqbTU3b2F2YnQ0eA=='> <div class='socialItem'><img class='socialItemI' src='download-compresskaru.com (1).png' alt=''> </div> </a> <a href='https://www.linkedin.com/public-profile/settings' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='download-compresskaru.com.png' alt=''></div> </a> </div>";
-var resumeString = "<img src='resumeicon.jpg' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='pdficon.jpg'><label>QaziShadabAhmed Resume (1).pdf</label></div><a href='assets/Qazi Shadab Ahmed&#39;s Resume.pdf' download='QaziShadabAhmed Resume (1).pdf'><img class='download' src='downloadicon.jpg'></a></div>";
+var contactString = "<div class='social'> <a target='_blank' href='tel:+923015280623'> <div class='socialItem' id='call'><img class='socialItemI' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RJ-BT4IF2EXyt_pa1QCjGGcBeqhzMvV2jw&s'/><label class='number'>03015280623</label></div> </a> <a href='G-mail:qazishadab2233@gmail.com'> <div class='socialItem'><img class='socialItemI' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAKsRfgulsEJzNjHPTBrTo3FTOESpp549cpw&s' alt=''></div> </a> <a target='_blank' href='Github'> <div class='socialItem'><img class='socialItemI' src='assets/githublogo.jpg' alt=''></div> </a> <a target='_blank' href='https://wa.me/918600765857'> <div class='socialItem'><img class='socialItemI' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjaNzRXVVvpTaJO0OnLNF7jbkCAlulF_myGg&s' alt=''></div> </a> <a target='_blank' href='http://t.me/qazishadab1'> <div class='socialItem'><img class='socialItemI' src='https://static.vecteezy.com/system/resources/thumbnails/026/127/326/small/telegram-logo-telegram-icon-transparent-social-media-icons-free-png.png' alt=''></div> </a> <a target='_blank' href='https://www.instagram.com/qazi.shadab_1?igsh=MXBqbTU3b2F2YnQ0eA=='> <div class='socialItem'><img class='socialItemI' src='assets/instagramlogo.jpg' alt=''> </div> </a> <a href='https://www.linkedin.com/in/qazi-shadab-ahmed-4178932a1/?originalSubdomain=pk' target='_blank' rel='noopener noreferrer'> <div class='socialItem'><img class='socialItemI' src='assets/linkedIn.jpg' alt=''></div> </a> </div>";
+var resumeString = "<img src='assets/resumeicon.jpg' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='assets/pdficon.jpg'><label>assets/QaziShadabAhmed Resume (1).pdf</label></div><a href='assets/Qazi Shadab Ahmed&#39;s Resume.pdf' download='assets/QaziShadabAhmed Resume (1).pdf'><img class='download' src='assets/downloadicon.jpg'></a></div>";
 var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/place/Khanpur+Haripur,+Haripur,+Khyber+Pakhtunkhwa/@33.8033473,72.9076796,16z/data=!3m1!4b1!4m6!3m5!1s0x38dfbacf1ffcd993:0xcc80c9aa96134096!8m2!3d33.8031749!4d72.9061903!16s%2Fg%2F11h9xll8qq?entry=ttu' class='map'></iframe></div><label class='add'><address>Moh Qazian Wala, <br>Khanpur.<br>Haripur, KPK , Pakistan.</address>";
+
 function startFunction() {
     setLastSeen();
     waitAndResponce("intro");
@@ -83,7 +84,7 @@ function waitAndResponce(inputText) {
             sendTextMessage(resumeString);
             break;
         case "skills":
-            sendTextMessage("<span class='sk'>I am currently pursuing BS degree in Computer Science.<br><br>I can comfortably write code in following languages :<br><span class='bold'>Java<br>C++<br>C<br>PHP<br>CSS<br>HTML</span><br><br>I've experiance with following frameworks :<span class='bold'><br>ReactJs<br>GTK</span><br><br>I use <span class='bold'>Visual Studio </span> as daily driver on my HP TouchSmart Core I7<br>OS:-<br>DE:Gnome(More often) Kde(often)<br>Favourite IDE:VSCode</span>");
+            sendTextMessage("<span class='sk'>I am currently pursuing BS degree in Computer Science.<br><br>I can comfortably write code in following languages :<br><span class='bold'>JavaScript<br>C++<br>C<br>PHP<br>CSS<br>HTML</span><br><br>I've experiance with following frameworks :<span class='bold'><br>ReactJs<br></span><br><br>I use <span class='bold'>Visual Studio </span> as daily driver on my HP TouchSmart Core I7<br>OS:-<br>DE:Gnome(More often) Kde(often)<br>Favourite IDE:VSCode</span>");
             break;
 
         case "education":
@@ -97,13 +98,13 @@ function waitAndResponce(inputText) {
             clearChat();
             break;
         case "about":
-            sendTextMessage("🛠️💻 This portfolio website is built using HTML, CSS and JavaScript !<br><br> Designed and Developed by <a class='alink' target='_blank' href='https://www.instagram.com/qazi.shadab_1?igsh=MXBqbTU3b2F2YnQ0eA=='><span class='bold'>Qazi Shadab Ahmed</a> with ❤️</span>");
+            sendTextMessage("🛠️💻 This portfolio website is built using HTML, CSS and JavaScript !<br><br> Designed and Developed by <a class='alink' target='_blank' href='https://www.instagram.com/qazi.shadab_1?igsh=MXBqbTU3b2F2YnQ0eA=='><span class='bold'>Qazi Shadab Ahmed</a></span>");
             break;
         case "contact":
             sendTextMessage(contactString);
             break;
         case "projects":
-            sendTextMessage("You want to check my projects? Then just jump into my linkedin.<br><br><div class='social'><a target='_blank' href='https://www.linkedin.com/public-profile/settings'> <div class='socialItem'><img class='socialItemI' src='linkedln.jpg' alt=''></div> </a></div>");
+            sendTextMessage("You want to check my projects? Then just jump into my Github.<br><br><div class='social'><a target='_blank' href='https://github.com/shadabahmed786'> <div class='socialItem'><img class='socialItemI' src='assets/githublogo.jpg' alt=''></div> </a></div>");
             break;
         case "new":
             sendTextMessage(addressString);
